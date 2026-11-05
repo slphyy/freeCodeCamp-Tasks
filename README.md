@@ -1,6 +1,6 @@
 # freeCodeCamp-Tasks
-repository to store some of the "lab" exercises of freeCodeCamp
+repository to store some of the "lab" and "workshop" exercises of freeCodeCamp
 
 ## Notice
 
-In a way, most of these codes were written by me, but freeCodeCamp uses a step-by-step approach to learning. Therefore, this repository is mostly a place to store `.py` files for personal study or research in the future.
+While most of this code was written by me, freeCodeCamp uses a guided, step-by-step approach for its workshop tasks. Therefore, this repository serves primarily as a place to archive .py files for future personal study or reference.
