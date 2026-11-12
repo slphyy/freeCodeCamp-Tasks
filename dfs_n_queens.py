@@ -15,18 +15,17 @@ def dfs_n_queens(n):
 
         for col in range(n):
             if col in cols or row - col in diag or row + col in anti_diag:
-                continue # a diagonal e a anti_diagonal ela nada 
-                         #mais nada menos é do que um conjunto que guarda as posições diagonais da coluna para a comparação
+                continue # diag and anti_diag are just sets to mantain the diagonal values of the column 
 
             queens.append(col)
             cols.add(col)
             diag.add(row - col)
-            anti_diag.add(row + col) # conjunto de verificações
+            anti_diag.add(row + col) #adding values so the position check works
 
             place(row + 1)
 
             queens.pop()
-            cols.remove(col) #remover as verificações se n der em nd
+            cols.remove(col) #resets if it doesnt show a solution
             diag.remove(row - col)
             anti_diag.remove(row + col)
 
